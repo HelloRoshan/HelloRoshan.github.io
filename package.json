@@ -2,9 +2,13 @@
 	"name": "Portfolio",
 	"scripts": {
 		"dev": "nuxt",
-		"generate": "nuxt generate"
+		"generate": "nuxt generate",
+		"deploy": "push-dir --dir=dist --branch=master --cleanup"
 	},
 	"dependencies": {
 		"nuxt": "^2.11.0"
+	},
+	"devDependencies": {
+		"push-dir": "^0.4.1"
 	}
 }

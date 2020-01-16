@@ -6,6 +6,7 @@
 		"deploy": "push-dir --dir=dist --branch=master --cleanup"
 	},
 	"dependencies": {
+		"materialize-css": "^1.0.0-rc.2",
 		"nuxt": "^2.11.0"
 	},
 	"devDependencies": {

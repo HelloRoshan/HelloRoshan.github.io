@@ -2,9 +2,9 @@
   <div class="main-container">
     <NavBar />
     <div class="wrapper">
-      <div class="background-image">
-        <!-- <img :src="`http://img.youtube.com/vi/${youtubeId}>/0.jpg`" alt=""> -->
-      </div>
+      <!-- <div class="background-image">
+        <img :src="`http://img.youtube.com/vi/${youtubeId}>/0.jpg`" alt="">
+      </div> -->
       <section class="container youtube-player">
         <img src="~/assets/music-logo.png" class="music-logo" alt="Music-Logo">
         <iframe

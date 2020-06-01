@@ -1,11 +1,15 @@
 <template>
   <nav>
     <div class="nav-wrapper" style="padding:0 2rem;">
-      <a href="#" class="brand-logo">RB</a>
+      <!-- <n-link to="/" class="brand-logo">RB</n-link> -->
       <ul class="right hide-on-med-and-down">
-        <!-- TODO: Use Nuxt Link -->
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Contact</a></li>
+        <li>
+          <n-link to="/">About Me</n-link>
+        <li>
+          <n-link to="/">Contact</n-link>
+        <li>
+          <n-link to="/music">Music</n-link>
+        </li>
       </ul>
     </div>
   </nav>
@@ -15,3 +19,10 @@ export default {
   name: 'NavBar',
 };
 </script>
+<style scoped>
+nav {
+  height: 44px;
+  line-height: 44px;
+  background-color: #1A1110;
+}
+</style>

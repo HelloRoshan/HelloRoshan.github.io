@@ -1,0 +1,8 @@
+/* TODO: Use SCSS */
+body {
+    height: 100vh;
+}
+body > #__nuxt,
+body #__layout {
+    height: 100%;
+}

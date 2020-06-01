@@ -20,5 +20,8 @@ export default {
   components: {
     NavBar,
   },
+  mounted() {
+    document.title = 'Home'
+  }
 };
 </script>

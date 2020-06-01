@@ -1,0 +1,16 @@
+/* TODO: Use SCSS */
+@font-face {
+    font-family: 'Sanchez-Regular';
+    src: url('../fonts/Sanchez-Regular.ttf');
+}
+@font-face {
+    font-family: 'SulphurPoint-Regular';
+    src: url('../fonts/SulphurPoint-Regular.ttf');
+}
+body {
+    height: 100vh;
+}
+body > #__nuxt,
+body #__layout {
+    height: 100%;
+}

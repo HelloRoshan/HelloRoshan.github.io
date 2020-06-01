@@ -1,14 +1,10 @@
 <template>
-  <div>
+  <div class="home-main-container">
     <NavBar />
-    <section style="padding: 0 2rem;">
-      <div style="max-width:700px;">
-        <h2>
-          Front<span class="red-text text-accent-3">-</span>End Developer<span class="red-text text-accent-3">.</span> 
-        </h2>
-        <h6 style="line-height:1.5;">
-          Hi, I'm Roshan! I am a Web Developer working with <span class="green-text text-accent-4">Vue.js</span>. I currently live in Kathmandu, Nepal. I am available for freelance jobs, just send me an email.
-        </h6>
+    <section class="content-wrapper">
+      <div class="description">
+        <h3>Hello, I'm <span class="red-text text-accent-3">Roshan Budhathoki</span>.</h3>
+        <h3>I'm a Front-End Developer</h3>
       </div>
     </section>
   </div>
@@ -25,3 +21,30 @@ export default {
   }
 };
 </script>
+<style scoped>
+.home-main-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.content-wrapper {
+  height: 100%;
+  background-color: #1a1110;
+  padding: 0 2rem;
+}
+h3 {
+  margin: 0;
+  color: #fff;
+  font-family: 'Sanchez-Regular';
+  font-size: 40px;
+  line-height: 56px;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+</style>

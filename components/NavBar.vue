@@ -5,8 +5,10 @@
       <ul class="right hide-on-med-and-down">
         <li>
           <n-link to="/">About Me</n-link>
-        <li>
+        </li>
+        <!-- <li>
           <n-link to="/">Contact</n-link>
+        </li> -->
         <li>
           <n-link to="/music">Music</n-link>
         </li>
@@ -24,5 +26,8 @@ nav {
   height: 44px;
   line-height: 44px;
   background-color: #1A1110;
+}
+li > a {
+  font-family: 'SulphurPoint-Regular';
 }
 </style>

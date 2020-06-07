@@ -1,33 +1,19 @@
 <template>
-  <div class="home-main-container">
-    <NavBar />
-    <section class="content-wrapper">
-      <div class="description">
-        <h1>Hello, I'm <span class="red-text text-accent-3">Roshan Budhathoki</span>.</h1>
-        <h1>I'm a Front-End Developer</h1>
-      </div>
-    </section>
-  </div>
+  <section class="content-wrapper">
+    <div class="description">
+      <h1>Hello, I'm <span class="red-text text-accent-3">Roshan Budhathoki</span>.</h1>
+      <h1>I'm a Front-End Developer</h1>
+    </div>
+  </section>
 </template>
 <script>
-import NavBar from '~/components/NavBar.vue';
-
 export default {
-  components: {
-    NavBar,
-  },
   mounted() {
     document.title = 'Home';
   }
 };
 </script>
 <style scoped>
-.home-main-container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  background-color: #1A1110;
-}
 .content-wrapper {
   height: 100%;
   padding: 0 2rem;

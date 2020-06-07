@@ -27,4 +27,7 @@ nav {
   font-family: 'SulphurPoint-Regular';
   color: #fff;
 }
+.nuxt-link-exact-active {
+  text-decoration: underline;
+}
 </style>

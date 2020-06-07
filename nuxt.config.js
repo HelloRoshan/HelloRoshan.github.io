@@ -1,6 +1,9 @@
 
 export default {
   modules: ["bootstrap-vue/nuxt"],
+  plugins: [
+    { src: "@/plugins/vue-particles", ssr: false }
+  ],
   css: ["./assets/css/portfolio.css"],
   head: {
     meta: [

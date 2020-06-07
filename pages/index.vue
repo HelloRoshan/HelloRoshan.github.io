@@ -3,8 +3,8 @@
     <NavBar />
     <section class="content-wrapper">
       <div class="description">
-        <h3>Hello, I'm <span class="red-text text-accent-3">Roshan Budhathoki</span>.</h3>
-        <h3>I'm a Front-End Developer</h3>
+        <h1>Hello, I'm <span class="red-text text-accent-3">Roshan Budhathoki</span>.</h1>
+        <h1>I'm a Front-End Developer</h1>
       </div>
     </section>
   </div>
@@ -17,7 +17,7 @@ export default {
     NavBar,
   },
   mounted() {
-    document.title = 'Home'
+    document.title = 'Home';
   }
 };
 </script>
@@ -32,7 +32,7 @@ export default {
   background-color: #1a1110;
   padding: 0 2rem;
 }
-h3 {
+h1 {
   margin: 0;
   color: #fff;
   font-family: 'Sanchez-Regular';

@@ -1,5 +1,7 @@
+
 export default {
+	modules: ['bootstrap-vue/nuxt'],
 	css: [
-	'~node_modules/materialize-css/dist/css/materialize.min.css', './assets/css/portfolio.css'
-	]
+	'./assets/css/portfolio.css'
+	],
 }

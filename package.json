@@ -6,8 +6,10 @@
 		"deploy": "push-dir --dir=dist --branch=master --cleanup"
 	},
 	"dependencies": {
-		"materialize-css": "^1.0.0-rc.2",
-		"nuxt": "^2.11.0"
+		"bootstrap-vue": "^2.15.0",
+		"node-sass": "^4.14.1",
+		"nuxt": "^2.11.0",
+		"sass-loader": "^8.0.2"
 	},
 	"devDependencies": {
 		"push-dir": "^0.4.1"

@@ -31,7 +31,7 @@ export default {
     }
   },
   mounted() {
-    document.title = 'Music'
+    document.title = 'Music';
   }
 };
 </script>

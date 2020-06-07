@@ -1,13 +1,24 @@
 <template>
-  <section class="content-wrapper">
-    <div class="description">
-      <h1>Hello, I'm <span class="red-text text-accent-3">Roshan Budhathoki</span>.</h1>
-      <h1>I'm a Front-End Developer</h1>
-    </div>
-  </section>
+  <div class="main-container">
+    <Particle />
+    <NavBar />
+    <section class="content-wrapper">
+      <div class="description">
+        <h1>Hello, I'm <span class="red-text text-accent-3">Roshan Budhathoki</span>.</h1>
+        <h1>I'm a Front-End Developer</h1>
+      </div>
+    </section>
+  </div>
 </template>
 <script>
+import NavBar from '~/components/NavBar.vue';
+import Particle from '~/components/Particle.vue';
+
 export default {
+  components: {
+    NavBar,
+    Particle
+  },
   mounted() {
     document.title = 'Home';
   }

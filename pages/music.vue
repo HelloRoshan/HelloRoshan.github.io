@@ -1,27 +1,45 @@
 <template>
-  <div class="wrapper">
-    <section class="container youtube-player">
-      <img src="~/assets/music-logo.png" class="music-logo" alt="Music-Logo">
-      <div class="iframe-container">
-        <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/videoseries?list=PLiVUkHwbn2RbgDCbqVZ-FAk_LgXvOwuzy"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen />
-      </div>
-    </section>
+  <div class="main-container">
+    <Particle />
+    <NavBar />
+    <div class="wrapper">
+      <section class="container youtube-player">
+        <img src="~/assets/music-logo.png" class="music-logo" alt="Music-Logo">
+        <div class="iframe-container">
+          <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/videoseries?list=PLiVUkHwbn2RbgDCbqVZ-FAk_LgXvOwuzy"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen />
+        </div>
+      </section>
+    </div>
   </div>
 </template>
 <script>
+import NavBar from '~/components/NavBar.vue';
+import Particle from '~/components/Particle.vue'
+
 export default {
+  components: {
+    NavBar,
+    Particle
+  },
+  computed: {
+    youtubeId() {
+      return 'PLiVUkHwbn2RbgDCbqVZ-FAk_LgXvOwuzy';
+    }
+  },
   mounted() {
     document.title = 'Music';
   }
 };
 </script>
 <style scoped>
+
+
 .wrapper {
   height: 100%;
 }

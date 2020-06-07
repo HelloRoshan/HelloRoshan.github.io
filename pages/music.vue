@@ -7,13 +7,15 @@
       </div> -->
       <section class="container youtube-player">
         <img src="~/assets/music-logo.png" class="music-logo" alt="Music-Logo">
-        <iframe
+        <div class="iframe-container">
+          <iframe
           width="560"
           height="315"
           src="https://www.youtube.com/embed/videoseries?list=PLiVUkHwbn2RbgDCbqVZ-FAk_LgXvOwuzy"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen />
+        </div>
       </section>
     </div>
   </div>
@@ -40,11 +42,11 @@ export default {
   height: 100%;
   display: flex;
   flex-direction: column;
+  background-color: #1A1110;
 }
 .wrapper {
   height: 100%;
   position: relative;
-  background-color: #1A1110;
 }
 .youtube-player {
   height: 100%;
@@ -72,9 +74,15 @@ export default {
   display: block;
   margin: 0 auto;
 }
-iframe {
+.iframe-container {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.iframe-container iframe {
+  width: 100%;
+  max-width: 560px;
   border-radius: 4px;
-  /* position: absolute; */
   border: 9px solid #fff;
 }
 .music-logo {

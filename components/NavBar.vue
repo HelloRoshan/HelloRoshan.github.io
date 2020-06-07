@@ -1,6 +1,6 @@
 <template>
   <b-navbar toggleable="lg" type="dark" :sticky="true">
-    <b-navbar-nav class="ml-auto"  style="padding:0 2rem;">
+    <b-navbar-nav class="ml-auto">
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <b-nav-item to="/">
@@ -22,7 +22,6 @@ export default {
 nav {
   height: 44px;
   line-height: 44px;
-  background-color: #1A1110;
 }
 .navbar-nav .nav-link {
   font-family: 'SulphurPoint-Regular';

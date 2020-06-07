@@ -26,10 +26,10 @@ export default {
   height: 100%;
   display: flex;
   flex-direction: column;
+  background-color: #1A1110;
 }
 .content-wrapper {
   height: 100%;
-  background-color: #1a1110;
   padding: 0 2rem;
 }
 h1 {
@@ -46,5 +46,11 @@ h1 {
   height: 100%;
   max-width: 800px;
   margin: 0 auto;
+}
+@media only screen and (max-width: 640px) {
+  h1 {
+    font-size: 20px;
+    line-height: 36px;
+  }
 }
 </style>

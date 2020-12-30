@@ -1,10 +1,15 @@
 <template>
-    <b-nav>
-      <b-nav-item active class="nav-menu-item">Home</b-nav-item>
-      <b-nav-item class="nav-menu-item">About</b-nav-item>
-      <b-nav-item class="nav-menu-item">Resume</b-nav-item>
-      <b-nav-item class="nav-menu-item">Contact</b-nav-item>
-    </b-nav>
+    <b-navbar toggleable="lg" type="dark" class="ml-n3 mobile-toggle-menu">
+      <b-navbar-nav align="start">
+        <b-navbar-toggle target="nav-collapse" />
+        <b-collapse id="nav-collapse" is-nav>
+          <b-nav-item active class="nav-menu-item">Home</b-nav-item>
+          <b-nav-item class="nav-menu-item">About</b-nav-item>
+          <b-nav-item class="nav-menu-item">Resume</b-nav-item>
+          <b-nav-item class="nav-menu-item">Contact</b-nav-item>
+        </b-collapse>
+      </b-navbar-nav>
+    </b-navbar>
 </template>
 <style scoped>
 .nav-menu-item {
@@ -24,7 +29,7 @@
     width: 0;
     height: 2px;
     bottom: -4px;
-    left: 16px;
+    left: .5rem;
     background-color: #18d26e;
     visibility: hidden;
     width: 0px;
@@ -41,4 +46,27 @@
     visibility: visible;
     width: 30px;
 }
+@media (max-width: 992px) {
+  .mobile-toggle-menu {
+    position: fixed;
+    right: 0;
+    top: 15px;
+    z-index: 9998;
+    border: 0;
+    background: none;
+    transition: all 0.4s;
+    outline: none !important;
+    line-height: 1;
+    cursor: pointer;
+    text-align: right;
+  }
+  .nav-menu-item {
+    margin-bottom: .5rem;
+  }
+  .nav-menu-item > .nav-link:before {
+    left: unset !important;
+    right: 0;
+  }
+}
+
 </style>

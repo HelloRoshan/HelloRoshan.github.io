@@ -1,33 +1,44 @@
 <template>
-  <b-navbar toggleable="lg" type="dark" :sticky="true">
-    <b-navbar-nav class="ml-auto">
-      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-      <b-collapse id="nav-collapse" is-nav>
-        <b-nav-item to="/">
-          About Me
-        </b-nav-item>
-        <b-nav-item to="/music">
-          Music
-        </b-nav-item>
-      </b-collapse>
-    </b-navbar-nav>
-  </b-navbar>
+    <b-nav>
+      <b-nav-item active class="nav-menu-item">Home</b-nav-item>
+      <b-nav-item class="nav-menu-item">About</b-nav-item>
+      <b-nav-item class="nav-menu-item">Resume</b-nav-item>
+      <b-nav-item class="nav-menu-item">Contact</b-nav-item>
+    </b-nav>
 </template>
-<script>
-export default {
-  name: 'NavBar',
-};
-</script>
 <style scoped>
-nav {
-  height: 44px;
-  line-height: 44px;
+.nav-menu-item {
+    position: relative;
 }
-.navbar-nav .nav-link {
-  font-family: 'SulphurPoint-Regular';
-  color: #fff;
+.nav-menu-item > .nav-link {
+    color: rgba(255,255,255, .8);
+    font-family: 'SulphurPoint-Regular', 'sans-serif';
+    font-weight: 900;
 }
-.nuxt-link-exact-active {
-  text-decoration: underline;
+.nav-menu-item:first-child > .nav-link {
+    padding-left: 0;
+}
+.nav-menu-item > .nav-link:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 16px;
+    background-color: #18d26e;
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out;
+}
+.nav-menu-item:first-child > .nav-link:before {
+    left: 0;
+}
+.nav-menu-item > .nav-link.active:before {
+    width: 30px;
+}
+.nav-menu-item:hover > .nav-link:before,
+.nav-menu-item > .nav-link.active:before {
+    visibility: visible;
+    width: 30px;
 }
 </style>

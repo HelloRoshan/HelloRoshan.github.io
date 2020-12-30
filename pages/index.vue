@@ -1,53 +1,58 @@
 <template>
-  <div class="main-container">
-    <Particle />
-    <NavBar />
-    <section class="content-wrapper">
-      <div class="description">
-        <h1>Hello, I'm <span class="red-text text-accent-3">Roshan Budhathoki</span>.</h1>
-        <h1>I'm a Front-End Developer</h1>
-      </div>
-    </section>
-  </div>
+    <header id="header">
+        <div class="container">
+            <h1 class="text-left">Roshan Budhathoki</h1>
+            <h2 class="text-left">I'm a passionate <span class="border-bottom" style="border-bottom-width:3px !important;border-color:#18d26e !important;color:#fff;">Front-End Developer</span> from Kathmandu</h2>
+            <nav-bar />
+            <socials-link />
+        </div>
+    </header>
 </template>
 <script>
 import NavBar from '~/components/NavBar.vue';
-import Particle from '~/components/Particle.vue';
-
+import SocialsLink from '~/components/SocialsLink.vue'
 export default {
-  components: {
-    NavBar,
-    Particle
-  },
-  mounted() {
-    document.title = 'Home';
-  }
-};
+    name: 'Homepage',
+    components: {
+        NavBar,
+        SocialsLink
+    }
+}
 </script>
 <style scoped>
-.content-wrapper {
-  height: 100%;
-  padding: 0 2rem;
+#header {
+    transition: ease-in-out 0.3s;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    z-index: 997;
+    overflow-y: auto;
+    background: url(~assets/bg.jpg) no-repeat top right fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #fff;
 }
-h1 {
-  margin: 0;
-  color: #fff;
-  font-family: 'Sanchez-Regular';
-  font-size: 40px;
-  line-height: 56px;
+#header h1 {
+    font-size: 48px;
+    font-family: 'SulphurPoint-Regular', 'sans-serif';
+    font-weight: 900;
+    letter-spacing: 2px;;
 }
-.description {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  max-width: 800px;
-  margin: 0 auto;
+#header h2 {
+    font-size: 24px;
+    font-family: 'SulphurPoint-Regular', 'sans-serif';
+    font-weight: 400;
+    color: rgba(255,255,255, .8);
 }
-@media only screen and (max-width: 640px) {
-  h1 {
-    font-size: 20px;
-    line-height: 36px;
-  }
+@media (max-width: 992px) {
+    #header h1 {
+        font-size: 36px;
+    }
+    #header h2 {
+        font-size: 20px;
+    }
 }
 </style>

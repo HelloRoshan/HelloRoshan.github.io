@@ -1,7 +1,6 @@
 <template>
   <div class="main-container">
     <Particle />
-    <NavBar />
     <div class="wrapper">
       <section class="container youtube-player">
         <img src="~/assets/music-logo.png" class="music-logo" alt="Music-Logo">

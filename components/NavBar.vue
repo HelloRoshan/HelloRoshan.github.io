@@ -4,9 +4,14 @@
         <b-navbar-toggle target="nav-collapse" />
         <b-collapse id="nav-collapse" is-nav>
           <b-nav-item active class="nav-menu-item">Home</b-nav-item>
-          <b-nav-item class="nav-menu-item">About</b-nav-item>
-          <b-nav-item class="nav-menu-item">Resume</b-nav-item>
-          <b-nav-item class="nav-menu-item">Contact</b-nav-item>
+          <!-- <b-nav-item class="nav-menu-item">
+            <NuxtLink to="#about" class="text-white" >About</NuxtLink>
+          </b-nav-item>           -->
+          <b-nav-item class="nav-menu-item">
+            <NuxtLink to="/music" class="text-white" >Music 🎧</NuxtLink>
+          </b-nav-item>
+          <!-- <b-nav-item class="nav-menu-item">Resume</b-nav-item> -->
+          <!-- <b-nav-item class="nav-menu-item">Contact</b-nav-item> -->
         </b-collapse>
       </b-navbar-nav>
     </b-navbar>

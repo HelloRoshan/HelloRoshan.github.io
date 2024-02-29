@@ -2,20 +2,23 @@
     <header id="header">
         <div class="container">
             <h1 class="text-left">Roshan Budhathoki</h1>
-            <h2 class="text-left">I'm a passionate <span class="border-bottom" style="border-bottom-width:3px !important;border-color:#18d26e !important;color:#fff;">Front-End Developer</span> from Kathmandu</h2>
+            <h2 class="text-left">I'm a passionate <span class="border-bottom" style="border-bottom-width:3px !important;border-color:#18d26e !important;color:#fff;">Developer</span> from Melbourne</h2>
             <nav-bar />
             <socials-link />
+            <about />
         </div>
     </header>
 </template>
 <script>
 import NavBar from '~/components/NavBar.vue';
-import SocialsLink from '~/components/SocialsLink.vue'
+import SocialsLink from '~/components/SocialsLink.vue';
+import About from '../components/About.vue';
 export default {
     name: 'Homepage',
     components: {
         NavBar,
-        SocialsLink
+        SocialsLink,
+        About
     }
 }
 </script>

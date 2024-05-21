@@ -10,6 +10,9 @@
           <b-nav-item class="nav-menu-item">
             <NuxtLink to="/music" class="text-white" >Music 🎧</NuxtLink>
           </b-nav-item>
+          <b-nav-item class="nav-menu-item">
+            <NuxtLink to="#projects" class="text-white" >Projects</NuxtLink>
+          </b-nav-item>
           <!-- <b-nav-item class="nav-menu-item">Resume</b-nav-item> -->
           <!-- <b-nav-item class="nav-menu-item">Contact</b-nav-item> -->
         </b-collapse>

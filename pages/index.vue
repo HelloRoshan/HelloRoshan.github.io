@@ -14,17 +14,19 @@
                 <h4 class="header-detail">Experience</h4>
                 <div class="project-grid">
                     <div class="project">
-                        <b-badge pill variant="success" class="project-tag">Job: ICT Intern</b-badge>
+                        <b-badge pill variant="success" class="project-tag">Job</b-badge>
                         <div class="project-title">iBuild Building Solutions</div>
-                        <div class="project-subtitle">March 2024 - Present</div>
+                        <div class="job-title">ICT Intern</div>
+                        <div class="project-subtitle">March 2024 - May 2024</div>
                         <div class="project-description">
                             
                         </div>
                         <div class="project-tech">PHP, SQL, Vtiger, WordPress</div>
                     </div>
                     <div class="project">
-                        <b-badge pill variant="success" class="project-tag">Job: Software Engineer</b-badge>
+                        <b-badge pill variant="success" class="project-tag">Job</b-badge>
                         <div class="project-title">Seva Development</div>
+                        <div class="job-title">Software Engineer</div>
                         <div class="project-subtitle">Sept 2021 - June 2022</div>
                         <div class="project-description">
                             
@@ -32,8 +34,9 @@
                         <div class="project-tech">Vue.js, React.js, Next.js, Docker</div>
                     </div>
                     <div class="project">
-                        <b-badge pill variant="success" class="project-tag">Job: Frontend Developer </b-badge>
-                        <div class="project-title">Company: HT Solutions</div>
+                        <b-badge pill variant="success" class="project-tag">Job</b-badge>
+                        <div class="project-title">HT Solutions</div>
+                        <div class="job-title">Frontend Developer</div>
                         <div class="project-subtitle">Feb, 2018 - Sept, 2021</div>
                         <div class="project-description">
                             
@@ -78,7 +81,7 @@
                         <b-badge pill variant="primary" class="project-tag">Project</b-badge>
                         <div class="project-title">Form Fields</div>
                         <div class="project-description">
-                            Application similar to Google Forms to creat input fields and create survey questions.
+                            Application similar to Google Forms to create input fields and create survey questions.
                         </div>
                         <div class="project-tech">Vue, JavaScript</div>
                     </div>
@@ -208,16 +211,18 @@ main {
 .project-subtitle {
     color: #777;
     font-weight: 200;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 .project-description {
     text-align: justify;
     color: #666;
+    font-size: 1.2rem;
+    font-weight: 200;
 }
 .project-tech {
     font-weight: 400;
     color: #00ab60;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 h3 {
     font-weight: 350;
@@ -255,5 +260,11 @@ h3 {
 }
 .social-icon:hover {
     opacity: .8;
+}
+.job-title {
+    font-style: italic;
+    color: #777;
+    font-size: 1.4rem;
+    font-weight: 300;
 }
 </style>

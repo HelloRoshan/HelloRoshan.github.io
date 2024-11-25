@@ -4,7 +4,7 @@
             <section>
                 <img src="~/assets/roshan_budhathoki.jpeg" alt="" width="140" height="140">
                 <h3>
-                    I’m Roshan –  Developer
+                    Hi, I am Roshan –  Full Stack Developer
                     <div class="detail">
                         I love bringing Ideas to Life.
                     </div>
@@ -16,7 +16,7 @@
                     <div class="project">
                         <b-badge pill variant="success" class="project-tag">Job</b-badge>
                         <div class="project-title">iBuild Building Solutions</div>
-                        <div class="job-title">ICT Intern</div>
+                        <div class="job-title">Web Developer</div>
                         <div class="project-subtitle">March 2024 - May 2024</div>
                         <div class="project-description">
                             
@@ -182,6 +182,11 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+}
+@media only screen and (max-width: 600px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
 }
 .project {
     position: relative;

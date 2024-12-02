@@ -2,7 +2,7 @@
     <div class="container-lg">
         <main>
             <section>
-                <img src="~/assets/roshan_budhathoki.jpeg" alt="" width="140" height="140">
+                <img src="~/assets/roshan_budhathoki.jpeg" class="portfolio-photo" alt="" width="140" height="140">
                 <h3>
                     Hi, I am Roshan –  Full Stack Developer
                     <div class="detail">
@@ -106,8 +106,8 @@
             <section class="about-me">
                 <h4 class="header-detail">About Me</h4>
                 <h3>
-                    I'm a developer based in Melbourne with a background in Web Application Development and Data Analytics.<br>
-                    If you're an entrepreneur, developer or designer interested in working together please reach out to me via <a href="mailto:roshanbudhathoki02@gmail.com">roshanbudhathoki02@gmail.com</a>
+                    I'm a Full Stack developer based in Melbourne, specialising in web application development and data analytics.<br>
+                    If you're an entrepreneur, developer or designer interested in collaborating, feel free to get in touch at <a href="mailto:roshanbudhathoki02@gmail.com">roshanbudhathoki02@gmail.com</a>
                 </h3>
             </section>
             <section class="my-stack">
@@ -165,6 +165,9 @@ export default {
 }
 </script>
 <style scoped>
+.portfolio-photo {
+    border-radius: 100%;
+}
 main {
     padding: 40px 20px;
 }
@@ -177,6 +180,7 @@ main {
 .header-detail {
     color: darkgray;
     margin-bottom: 12px;
+    text-align: center;
 }
 .project-grid {
     display: grid;
@@ -193,13 +197,16 @@ main {
     transition: box-shadow .3s, background-color .3s ;
     border-radius: 10px;
     padding: 50px 25px;
-    background-color: #efeff0;
+    /* background-color: #efeff0; */
     font-size: 1.75rem;
+    transition: transform .2s;
+    border: 1px solid #fff;
 }
 .project:hover {
     cursor: pointer;
     box-shadow: 0 0 11px rgba(33,33,33,.2);
-    background-color: #dbf5ee;
+    /* background-color: #dbf5ee; */
+    transform: scale(1.03);
 }
 .project-tag {
     position: absolute;
@@ -233,7 +240,7 @@ h3 {
     font-weight: 350;
 }
 .about-me h3 {
-    text-align: justify;
+    text-align: center;
 }
 .tech-name {
     padding: 8px 16px;
@@ -246,6 +253,7 @@ h3 {
 }
 .social-links {
     display: flex;
+    justify-content: center;
 }
 .social-icon {
     border-radius: 50%;

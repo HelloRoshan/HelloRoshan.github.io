@@ -9,6 +9,9 @@
 }
 body {
     height: 100vh;
+    color: #fff;
+    background-color: #000;
+
 }
 body > #__nuxt,
 body #__layout {

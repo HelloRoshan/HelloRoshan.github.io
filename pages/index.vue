@@ -162,7 +162,7 @@ export default {
         return {
             techList: ['JavaScript', 'Python', 'R', 'PHP', 'SQL'],
             frameworkList : ['Vue.js', 'React.js', 'Node.js', 'Electron.js', 'Nuxt', 'Next', 'Flask', 'matplotlib', 'pandas'],
-            databaseList: ['MySQL'],
+            databaseList: ['MySQL', 'MongoDB'],
             otherList: ['HTML', 'CSS', 'SASS', 'Git', 'Jira', 'Docker', 'Figma', 'AWS', 'Tableau', 'REST API']
         }
     }

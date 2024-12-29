@@ -267,6 +267,7 @@ h3 {
 .social-links {
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
 .social-icon {
     border-radius: 50%;

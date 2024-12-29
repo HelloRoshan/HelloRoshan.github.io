@@ -51,7 +51,9 @@
                 <div class="project-grid">
                     <div class="project">
                         <b-badge pill variant="primary" class="project-tag">Project</b-badge>
-                        <div class="project-title">Social Network Analysis - Desktop Application</div>
+                        <div class="project-title">
+                            <b-link href="https://github.com/HelloRoshan/tech-innovation-project-extended" target="_blank" class="link">Social Network Analysis - Desktop Application</b-link>
+                        </div>
                         <div class="project-description">
                             A desktop application for social network analysis that visualizes network connections as graphs, offering insights, customization, and detailed analysis of uploaded data.
                             The application was packaged and tested in macOS, Windows and Linux platforms.
@@ -60,7 +62,9 @@
                     </div>
                     <div class="project">
                         <b-badge pill variant="primary" class="project-tag">Project</b-badge>
-                        <div class="project-title">Game for Kids Learning</div>
+                        <div class="project-title">
+                            <b-link href="https://github.com/HelloRoshan/tech-enquiry-project" target="_blank" class="link">Game for Kids Learning</b-link>
+                        </div>
                         <div class="project-description">
                             Developed modular and reusable components for the
                             application, leveraging Next.js for efficient routing and rapid application development.
@@ -69,7 +73,19 @@
                     </div>
                     <div class="project">
                         <b-badge pill variant="primary" class="project-tag">Project</b-badge>
-                        <div class="project-title">Domotics</div>
+                        <div class="project-title">
+                            <b-link href="https://e-commerce-psi-tan.vercel.app/" target="_blank" class="link">E-commerce</b-link>
+                        </div>
+                        <div class="project-description">
+                            E-commerce website demo.
+                        </div>
+                        <div class="project-tech">React, Redux</div>
+                    </div>
+                    <div class="project">
+                        <b-badge pill variant="primary" class="project-tag">Project</b-badge>
+                        <div class="project-title">
+                            <b-link href="https://github.com/HelloRoshan/Domotics" target="_blank" class="link">Domotics</b-link>
+                        </div>
                         <div class="project-description">
                             Developed the backend to connect a server hosted on a Raspberry Pi for a
                             Home Automation Application, handling real-time light data updates and retrieval. The
@@ -79,27 +95,13 @@
                     </div>
                     <div class="project">
                         <b-badge pill variant="primary" class="project-tag">Project</b-badge>
-                        <div class="project-title">Form Fields</div>
+                        <div class="project-title">
+                            <b-link href="https://form-fields.vercel.app/" target="_blank" class="link">Form Fields</b-link>
+                        </div>
                         <div class="project-description">
                             Application similar to Google Forms to create input fields and create survey questions.
                         </div>
                         <div class="project-tech">Vue, JavaScript</div>
-                    </div>
-                    <div class="project">
-                        <b-badge pill variant="primary" class="project-tag">Project</b-badge>
-                        <div class="project-title">Data Analytics Projects</div>
-                        <div class="project-description">
-                            The projects utilized NumPy, Matplotlib, Pandas, and machine learning algorithms to analyze datasets, resulting in conclusive findings and hypotheses.
-                        </div>
-                        <div class="project-tech">Python, jupyter notebook, pandas, matplotlib</div>
-                    </div>
-                    <div class="project">
-                        <b-badge pill variant="primary" class="project-tag">Project</b-badge>
-                        <div class="project-title">AWS EC2 Server</div>
-                        <div class="project-description">
-                            Initiated an EC2 instance and hosted a web server on it.
-                        </div>
-                        <div class="project-tech">AWS, EC2</div>
                     </div>
                 </div>
             </section>
@@ -167,6 +169,12 @@ export default {
 <style scoped>
 .portfolio-photo {
     border-radius: 100%;
+    /* filter: grayscale(100%); */
+    transition: transform .5s;
+}
+.portfolio-photo:hover {
+    /* filter: grayscale(0%); */
+    transform: scale(1.05);
 }
 main {
     padding: 40px 20px;
@@ -197,13 +205,13 @@ main {
     transition: box-shadow .3s, background-color .3s ;
     border-radius: 10px;
     padding: 50px 25px;
-    /* background-color: #efeff0; */
+    background-color: #19171d;
     font-size: 1.75rem;
     transition: transform .2s;
     border: 1px solid #fff;
 }
 .project:hover {
-    cursor: pointer;
+    /* cursor: pointer; */
     box-shadow: 0 0 11px rgba(33,33,33,.2);
     /* background-color: #dbf5ee; */
     transform: scale(1.03);
@@ -219,6 +227,9 @@ main {
 }
 .project-title {
     font-weight: 350;
+}
+.project-title .link {
+    color: #fff;
 }
 .project-subtitle {
     color: #777;
@@ -258,7 +269,7 @@ h3 {
 .social-icon {
     border-radius: 50%;
     margin-left: 16px;
-    background-color: #28a745;
+    background-color: #4a396a;
     font-size: 1rem;
     display: flex;
     align-items: center;
@@ -279,5 +290,8 @@ h3 {
     color: #777;
     font-size: 1.4rem;
     font-weight: 300;
+}
+.badge-success, .badge-primary {
+    background-color: #4a396a;
 }
 </style>

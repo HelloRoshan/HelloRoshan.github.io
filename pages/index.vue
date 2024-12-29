@@ -1,5 +1,6 @@
 <template>
-    <div class="container-lg">
+    <div class="container-lg" style="position: relative; height: auto;">
+        <Particle/>
         <main>
             <section>
                 <img src="~/assets/roshan_budhathoki.jpeg" class="portfolio-photo" alt="" width="140" height="140">
@@ -148,12 +149,13 @@
 </template>
 <script>
 import { BBadge, BIconLinkedin, BIconGithub, BIconTwitter, BIconInstagram, BIconFacebook } from 'bootstrap-vue';
+import Particle from '~/components/Particle.vue'
 
 
 export default {
     name: 'Portfolio',
     components: {
-        BBadge, BIconLinkedin, BIconGithub, BIconTwitter, BIconInstagram, BIconFacebook
+        BBadge, BIconLinkedin, BIconGithub, BIconTwitter, BIconInstagram, BIconFacebook, Particle
 
     },
     data() {

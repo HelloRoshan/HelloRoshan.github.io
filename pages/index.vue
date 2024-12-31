@@ -132,7 +132,7 @@
                     <b-badge pill variant="success" class="tech-name" v-for="other in otherList" :key="other">{{ other }}</b-badge>
                 </div>
             </section>
-            <section class="my-socials">
+            <section class="my-socials" style="position: relative;">
                 <h4 class="header-detail">Reach out to me</h4>
                 <div class="social-links">
                     <b-link href="https://www.linkedin.com/in/roshan-budhathoki/" target="_blank" class="social-icon"><b-icon-linkedin /></b-link>

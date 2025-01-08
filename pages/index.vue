@@ -47,9 +47,28 @@
                 </div>
             </section>
             <section class="projects">
-                <h4 class="header-detail">My Projects</h4>
-                <!-- TODO: Add links to the projects -->
+                <h4 class="header-detail">Projects</h4>
                 <div class="project-grid">
+                    <div class="project">
+                        <b-badge pill variant="primary" class="project-tag">Project</b-badge>
+                        <div class="project-title">
+                            <b-link href="https://www.flashbrand.me/" target="_blank" class="link">Flashbrand</b-link>
+                        </div>
+                        <div class="project-description">
+                            Worked on the migration, development and maintenance of the frontend application.
+                        </div>
+                        <div class="project-tech">Vue.js, Vuex, Node.js</div>
+                    </div>
+                    <div class="project">
+                        <b-badge pill variant="primary" class="project-tag">Project</b-badge>
+                        <div class="project-title">
+                            <b-link href="https://ampleorganics.com/en/" target="_blank" class="link">Ample Organics</b-link>
+                        </div>
+                        <div class="project-description">
+                            Developed and maintained the inventory management system as well as the e-commerce website of the company.
+                        </div>
+                        <div class="project-tech">Vue.js, Ruby on Rails, Docker</div>
+                    </div>
                     <div class="project">
                         <b-badge pill variant="primary" class="project-tag">Project</b-badge>
                         <div class="project-title">

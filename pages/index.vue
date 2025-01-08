@@ -125,7 +125,7 @@
                     </div>
                 </div>
             </section>
-            <section class="about-me">
+            <section class="about-me" style="position: relative;">
                 <h4 class="header-detail">About Me</h4>
                 <h3>
                     I'm a Full Stack developer based in Melbourne, specialising in web application development and data analytics.<br>
